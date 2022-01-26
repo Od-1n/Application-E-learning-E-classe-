@@ -1,0 +1,74 @@
+/* #sidebarToggle.navIcons{
+  transform: rotate(180deg);
+} */
+
+body{
+  background: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover{
+  color: #333;
+}
+/*  */
+
+
+.nav-link:hover{
+  background-color: #00C1FE;
+  color: #000;
+}
+
+
+.nav-bar_left .active{
+  background-color: #00C1FE;
+  color: #000;
+}
+
+.nav-bar_left .nav-link {
+  margin: 5px 0 ;
+}
+
+
+.cart-info-1{
+  background-color: #F0F9FF;
+}
+
+
+.cart-info-1 i{
+ color: #74C1ED ;
+}
+
+
+.cart-info-2{
+  background-color: #FEF6FB;
+}
+
+
+.cart-info-2 i{
+  color: #EE95C5 ;
+}
+
+.cart-info-3{
+  background-color: #FEFBEC;
+}
+
+
+.cart-info-3 i{
+  color: #00C1FE ;
+}
+
+
+.cart-info-4{
+  background: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+
+
+.cart-info-4 i , .p-user{
+  color: #FFFFFF ;
+}
+
+/*  */

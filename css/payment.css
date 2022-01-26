@@ -1,0 +1,14 @@
+
+
+body{
+    background: #f3f3f3;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1.1rem .5rem;
+    vertical-align: text-top;
+}
+
+.eye-btn{
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+body{
+    background: #E5E5E5 ;
+}
+
+tr{
+    background-color: white;
+}
+
+tr{
+    border-width: 10px 0;
+    border-style: solid;
+    border-color: #E5E5E5;
+    padding: 5px 15px;
+}
+
+.table>:not(caption)>*>* {
+    padding: 1.3rem .5rem;
+    vertical-align: text-top
+}
+
+
+td:last-child {
+    border-radius: 10px;
+}
+
+td:first-child {
+    border-left-width: 3px;
+    border-radius: 5px 0 0 5px;
+}
+
+thead tr{
+    background-color: #E5E5E5;
+    color: gray;
+}
+
+td:last-child{
+    text-align: center;
+}
