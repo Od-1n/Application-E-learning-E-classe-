@@ -37,8 +37,7 @@
                               <label for="password" class="form-label">Password</label>
                               <input type="password" class="form-control" placeholder="Enter your password" id="password">
                           </div>
- 
-                          <a href="#" class="btn bg-button text-white text-center mt-2 w-100 d-flex align-items-center justify-content-center bg-info" type="submit">
+  <a href="#" class="btn bg-button text-white text-center mt-2 w-100 d-flex align-items-center justify-content-center bg-info">
                               SIGN IN
                           </a>
                           <div class="d-flex justify-content-around mt-2">
