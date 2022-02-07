@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <?php include '<include/side.php'?>
+ 
 
 
 
@@ -48,11 +48,11 @@
               <th scope="col">Handle</th>
               <th scope="col">Handle</th>
               <th scope="col">Handle</th>
-              <th scope="col">Handle</th>
+              <th scope="col" >Handle</th>
             </tr>
           </thead>
           <tbody>
-            <?php include 'include/tabpay.php'?>
+            <?php include 'operation.php'?>
           </tbody>
         </table>
       </div>
@@ -64,7 +64,7 @@
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
-  <script src="side/side.js"></script>
+  <!-- <script src="side/side.js"></script> -->
 </body>
 
 </html>

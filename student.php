@@ -34,7 +34,7 @@
 
     <div class="container ">
     <div class="col-12 d-flex justify-content-end ">
-            <a href="add.php">
+            <a href="form.php">
               <input value="add New Student" class="btn btn-primary ms-1 p-2 px-3 btn-info text-light mt-5 " type="submit" />
             </a>
           </div>

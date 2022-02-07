@@ -1,0 +1,33 @@
+[
+    {
+       "name" : "karthi",
+       "payment_schedule" : "first",
+       "amount_paid" : "10,000",
+       "balance_amount" : "30,000",
+       "date" : "5-jan,2022"
+    },
+ 
+    {
+       "name" : "anas",
+       "payment_schedule" : "first",
+       "amount_paid" : "10,000",
+       "balance_amount" : "30,000",
+       "date" : "5-jan,2022"
+    },
+ 
+    {
+       "name" : "jalil",
+       "payment_schedule" : "first",
+       "amount_paid" : "10,000",
+       "balance_amount" : "30,000",
+       "date" : "5-jan,2022"
+    },
+ 
+    {
+       "name" : "jalil",
+       "payment_schedule" : "first",
+       "amount_paid" : "10,000",
+       "balance_amount" : "30,000",
+       "date" : "5-jan,2022"
+    }
+ ]
