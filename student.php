@@ -1,3 +1,25 @@
+<?php
+include 'crud/crud.php';
+$students=[];
+$students=getdata();
+
+
+if(isset($_GET['id']) && !empty($_GET['id'])){
+
+  delete($_GET['id']);
+  header('location:student.php');
+}
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone']) && isset($_POST['enroll_number']) && isset($_POST['date_of_admission'])){
+  if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['enroll_number'] && !empty($_POST['date_of_admission']))){
+    update($_POST['id']);
+    header('location:form.php');
+  }
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +77,17 @@
           </thead>
           <tbody>
 
-            <?php include 'include/associa.php'?>
+          <tr>
+    <?php foreach ($students as $students) : ?>
+        <td><img src="pexels-photo-2379004 1.png" alt=""></td>
+        <td><?php echo $students["name"] ?></td>
+        <td><?php echo $students["email"] ?></td>
+        <td><?php echo $students["phone"] ?></td>
+        <td><?php echo $students["enroll_number"] ?></td>
+        <td><?php echo $students["date_of_admission"] ?></td>
+        <td><a href="form.php?id=<?php echo $students['id']?>"><i class="bi bi-pencil fs-5 text-info"></i></a> <a href="student.php?id=<?php echo $students['id']?>" class="m-3"><i class="bi bi-trash fs-5 text-info"></i></a></td>
+</tr>
+<?php endforeach ?>
 
 
 

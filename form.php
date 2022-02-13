@@ -1,3 +1,25 @@
+<?php
+include 'crud/crud.php';
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone']) && isset($_POST['enroll_number']) && isset($_POST['date_of_admission'])){
+  if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phone']) && !empty($_POST['enroll_number'] && !empty($_POST['date_of_admission']))){
+      create($_POST['name'],$_POST['email'],$_POST['phone'],$_POST['enroll_number'],$_POST['date_of_admission']);
+      header('location:student.php');
+  }
+
+}
+
+
+
+
+
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,26 +32,35 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-<form>
- 
-  <label for="">name</label>
-    <input type="name" class="form-control" id="" aria-describedby="" placeholder="Enter name">
-    <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-    <label for="">phone number</label>
-    <input type="phone number" class="form-control" id="" aria-describedby="" placeholder="Enter phone">
-    <label for="">enroll number</label>
-    <input type="enroll number" class="form-control" id="" aria-describedby="" placeholder="Enter enneroll number">
-    <label for="">date of admission</label>
-    <input type="date" class="form-control" id="" aria-describedby="" placeholder="Enter date">
+<form action="" method="POST">
+            <div class="form-control d-flex justify-content-end">
+                <div class="row">
+                    <div class="form-group mt-4">
+                        <input placeholder="username" type="text" name="name" required>
+                    </div>
+                    <div class="form-group mt-4">
+                        <input placeholder="Email" type="text" name="email" required>
+                    </div>
+                    <div class="form-group mt-4">
 
-  <button type="submit" class="btn btn-primary mt-2">Submit</button>
-</form>
-</main>
+                        <input placeholder="Phone" type="text" name="phone" required>
+                    </div>
+
+                    <div class="form-group mt-4">
+
+                        <input placeholder="Date_of_Admission" type="date" name="date_of_admission" required>
+                    </div>
+                    <div class="form-group mt-4">
+
+<input placeholder="enroll_number" type="text" name="enroll_number" required>
+</div>
+                    <div class="form-group mt-4">
+                        <button class="btn btn-primary" type="Submit" name="insert">Add</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
